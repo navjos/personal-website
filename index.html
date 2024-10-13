@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Josselyn Navas</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Karla', sans-serif; /*sans-serif as fallback*/
+      display: flex; /* enables the Flexbox layout model*/
+      flex-direction: column;
+    }
+
+    .header {
+      display: flex;
+      height: 75vh;
+      justify-content: space-between; 
+      align-items: center; 
+    }
+
+    .img-container {
+      flex: 0 0 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sqr-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text-container {
+      flex: 0 0 50vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .sections {
+      width: 75vw;
+      margin: 0 auto; /* Center the sections */
+      position: relative;
+      display: flex;
+      flex-direction: column; /* Stack sections vertically */
+      justify-content: center; /* Center sections vertically */
+    }
+
+    .section h2 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .section p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .section a {
+      color: purple;
+      text-decoration: underline;
+    }
+
+    .logo {
+      width: 40px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    
+    .youtube-container{
+      margin: 0 auto;
+      }
+    
+    @media (max-width: 500px) {
+    .sections {
+      width: 75vw;
+      margin: -20% auto; 
+      }
+    .youtube-container {
+      position: relative;
+      width: 100%; /* Make the container take full width */
+      padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+  
+    .youtube-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+  }
+} 
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="img-container">
+      <img src="https://i.imgur.com/ogYhXQl.jpg" alt="Imgur Image" class="sqr-img">
+    </div>
+    <div class="text-container">
+      <h1>Hi, I'm Josselyn.</h1>
+      <p>Thanks for stopping by.</p>
+    </div>
+  </div>
+
+  <!-- Main Section with Sections -->
+  <div class="sections">
+    <div class="section">
+      <h2><img src="https://us.123rf.com/450wm/savo/savo1808/savo180800118/106037413-vector-handle-icon-with-a-cap-on-the-circle-of-maroon-color.jpg?ver=6" class="logo">Bio</h2>
+      <p>Ecuador made me, Queens, NYC raised me. <br>
+      I am an aspiring app developer on a journey to democratize personal finance education, one stop at a time.</p>
+    </div>
+    <div class="section">
+      <h2> <img src="https://i0.wp.com/biocars.uchicago.edu/wp-content/uploads/2019/05/cropped-logo.png?ssl=1" class="logo">Education  </h2>
+      <p>
+        University of Chicago <br> 
+        Bachelors in Economics <br>
+        Minor in Data Science<br>
+        Magna Cum Laude
+      </p>
+    </div>
+    <div class="section">
+      <h2> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR3721lXcRL0uaKx8AYoM0nRRk2HVdvbYaPA&s" class="logo">Projects </h2>
+      <p> Co-founder of <a href="https://www.uchicagobold.org" target="_blank">B.O.L.D at UChicago</a> <br>
+      Co-founder of <a href="https://wealthonthe7.substack.com" target="_blank">WealthOnThe7</a> <br>
+      Creator of the <a href="https://www.youtube.com/watch?v=1YmfPPyHZw0&t=1s" target="_blank">Roommate Hunting Network (tap below!)
+      </p> <br>
+    </div>
+  <div class=youtube-container>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1YmfPPyHZw0?si=CzxueijVLW6OlvwK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+</div>
+</div>
+
+</body>
+</html>
